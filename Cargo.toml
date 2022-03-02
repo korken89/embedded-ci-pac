@@ -1,0 +1,17 @@
+[package]
+authors = ["Emil Fresk <emil.fresk@gmail.com>"]
+categories = ["embedded", "hardware-support", "no-std"]
+description = "Interrupt bindings for a generic embedded-ci test target"
+edition = "2018"
+keywords = ["arm", "cortex-m"]
+license = "MIT OR Apache-2.0"
+name = "embedded-ci-pac"
+version = "0.1.0"
+
+[dependencies]
+cortex-m = "0.7.3"
+vcell = "0.1.0"
+
+[dependencies.cortex-m-rt]
+version = ">=0.6.15,<0.8"
+features = ["device"]
